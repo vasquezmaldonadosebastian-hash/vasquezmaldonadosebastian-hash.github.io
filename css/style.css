@@ -493,6 +493,58 @@ img {
     padding: 2px 0;
 }
 
+/* --- PROJECT SCREENSHOTS --- */
+.project-screenshots {
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid var(--color-bg-alt);
+}
+
+.screenshots-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--color-text-muted);
+    margin-bottom: 14px;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+.screenshot-card {
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition);
+    background: var(--color-white);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.screenshot-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.screenshot-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--color-bg-alt);
+}
+
+.screenshot-label {
+    display: block;
+    padding: 8px 12px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+
 /* --- SKILLS --- */
 .skills-grid {
     display: grid;
