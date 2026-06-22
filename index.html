@@ -270,46 +270,53 @@
 
                 <div class="project-card glass-card">
                     <div class="project-info">
-                        <h3>Pipeline automatizado de boletas Transbank</h3>
-                        <p>Pipeline que procesa <strong>7,912 PDFs</strong> de boletas electrónicas desde la pasarela de pagos Transbank, los transforma en un <strong>dataset gold de 8,101 registros</strong> con 28 campos, y genera un dashboard interactivo de 4 páginas para análisis de negocio hotelero.</p>
-                        <p>Automatización completa desde la descarga hasta la visualización, con validación cruzada para garantizar exactitud del IVA y detección temprana de inconsistencias.</p>
+                        <h3>Hotel Pulp Fiction — Dashboard de Ventas e IVA</h3>
+                        <p>Dashboard interactivo público que analiza <strong>10,000 boletas electrónicas sintéticas</strong> de un hotel, con 28 campos cada una. Datos 100% sintéticos generados con seed reproducible para demostración de portfolio.</p>
+                        <p>Incluye generador sintético parametrizable (<code>--single-company</code>), base de datos SQLite con 3 tablas e índices optimizados, y dashboard Streamlit con 5 páginas estilo Power BI. Desplegado en Streamlit Cloud con integración continua desde GitHub.</p>
                         <div class="project-stack">
                             <span class="stack-tag">Python</span>
-                            <span class="stack-tag">pdfplumber</span>
                             <span class="stack-tag">pandas</span>
                             <span class="stack-tag">Plotly</span>
+                            <span class="stack-tag">SQLite</span>
                             <span class="stack-tag">Streamlit</span>
-                            <span class="stack-tag">Excel/VBA</span>
+                            <span class="stack-tag">Cisco Design</span>
                         </div>
-                        <a href="https://github.com/vasquezmaldonadosebastian-hash/solar-madariaga" class="btn btn-primary" target="_blank">Ver repositorio →</a>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap">
+                            <a href="https://hotelpulpfiction.streamlit.app" class="btn btn-primary" target="_blank">Dashboard en vivo →</a>
+                            <a href="https://github.com/vasquezmaldonadosebastian-hash/HotelPulpFictionV2" class="btn btn-outline" target="_blank">Ver repositorio →</a>
+                        </div>
                     </div>
                     <div class="project-arch">
-                        <div class="arch-box arch-source">PDFs Transbank<br><span>7,912 boletas</span></div>
+                        <div class="arch-box arch-source">Generador Sintético<br><span>10,000 boletas · seed reproducible</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-extract">Python pdfplumber<br><span>24 campos extraídos</span></div>
+                        <div class="arch-box arch-extract">SQLite Optimizado<br><span>3 tablas · 7 índices</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-process">Merge & Enrich<br><span>8,101 registros gold</span></div>
+                        <div class="arch-box arch-vis">Dashboard Streamlit<br><span>5 páginas · Tema Cisco dark</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-vis">Dashboard Streamlit<br><span>4 páginas interactivas</span></div>
+                        <div class="arch-box arch-process">Streamlit Cloud<br><span>GitHub CI · Público</span></div>
                     </div>
                     <div class="project-screenshots">
-                        <h4 class="screenshots-title">Dashboard — Hotel PulpFiction</h4>
+                        <h4 class="screenshots-title">Dashboard — Hotel Pulp Fiction</h4>
                         <div class="screenshots-grid">
                             <div class="screenshot-card">
-                                <img src="assets/dashboard-overview.png" alt="Dashboard overview" loading="lazy">
-                                <span class="screenshot-label">Panel general</span>
+                                <img src="assets/pf2-resumen.png" alt="Resumen ejecutivo" loading="lazy">
+                                <span class="screenshot-label">Resumen Ejecutivo</span>
                             </div>
                             <div class="screenshot-card">
-                                <img src="assets/dashboard-costos.png" alt="Costos y proyecciones" loading="lazy">
-                                <span class="screenshot-label">Costos</span>
+                                <img src="assets/pf2-iva.png" alt="Análisis IVA" loading="lazy">
+                                <span class="screenshot-label">Análisis IVA</span>
                             </div>
                             <div class="screenshot-card">
-                                <img src="assets/dashboard-temporal.png" alt="Análisis temporal" loading="lazy">
-                                <span class="screenshot-label">Tendencia temporal</span>
+                                <img src="assets/pf2-ventas.png" alt="Ventas diarias y mensuales" loading="lazy">
+                                <span class="screenshot-label">Ventas</span>
                             </div>
                             <div class="screenshot-card">
-                                <img src="assets/dashboard-detalle.png" alt="Detalle de boletas" loading="lazy">
-                                <span class="screenshot-label">Detalle de boletas</span>
+                                <img src="assets/pf2-pagos.png" alt="Pagos y medios" loading="lazy">
+                                <span class="screenshot-label">Pagos</span>
+                            </div>
+                            <div class="screenshot-card">
+                                <img src="assets/pf2-detalle.png" alt="Detalle de boletas" loading="lazy">
+                                <span class="screenshot-label">Detalle</span>
                             </div>
                         </div>
                     </div>

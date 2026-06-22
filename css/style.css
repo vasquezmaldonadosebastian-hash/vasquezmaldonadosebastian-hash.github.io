@@ -305,6 +305,18 @@ img {
     transform: translateY(-1px);
 }
 
+/* Button outline variant for light backgrounds (project cards) */
+.project-card .btn-outline {
+    color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.project-card .btn-outline:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    background: rgba(13,148,136,0.06);
+}
+
 /* --- SECTIONS --- */
 .section {
     padding: 100px 0;
