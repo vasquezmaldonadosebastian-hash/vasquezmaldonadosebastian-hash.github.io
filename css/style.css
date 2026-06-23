@@ -186,7 +186,7 @@ img {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #0a2e28 50%, #112233 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 50%, var(--color-primary) 100%);
     background-size: 400% 400%;
     animation: gradientShift 20s ease infinite;
     z-index: 0;
@@ -213,7 +213,7 @@ img {
     display: flex;
     gap: 60px;
     align-items: center;
-    padding: 120px 24px 80px;
+    padding: 80px 24px 80px;
 }
 
 .hero-text {
@@ -255,6 +255,32 @@ img {
     line-height: 1.7;
     margin-bottom: 32px;
     max-width: 520px;
+}
+
+.hero-metrics {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.hero-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.metric-number {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1.1;
+}
+
+.metric-label {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .highlight {
@@ -389,6 +415,10 @@ img {
     color: var(--color-primary);
 }
 
+.about-cta {
+    margin-top: 20px;
+}
+
 .about-highlights {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -492,9 +522,9 @@ img {
     margin-top: 3px;
 }
 
-.arch-source  { background: #4f46e5; }
-.arch-extract { background: #7c3aed; }
-.arch-process { background: #0891b2; }
+.arch-source  { background: var(--color-primary); }
+.arch-extract { background: var(--color-primary-light); }
+.arch-process { background: var(--color-accent); }
 .arch-vis     { background: var(--color-accent); }
 
 .arch-arrow {
