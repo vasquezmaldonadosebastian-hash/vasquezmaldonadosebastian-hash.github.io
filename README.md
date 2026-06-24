@@ -1,1 +1,1 @@
-User: vasquezmaldonadosebastian-hash
+User: VasquezMaldonadoSebastian
