@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='20' y='50' width='16' height='40' rx='4' fill='%23c9a86c'/><rect x='42' y='30' width='16' height='60' rx='4' fill='%23d4835a'/><rect x='64' y='15' width='16' height='75' rx='4' fill='%23c9a86c'/></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='20' y='50' width='16' height='40' rx='4' fill='%23f5b342'/><rect x='42' y='30' width='16' height='60' rx='4' fill='%2314b8a6'/><rect x='64' y='15' width='16' height='75' rx='4' fill='%23f5b342'/></svg>">
+    <meta name="theme-color" content="#080c16">
 </head>
 <body>
 
@@ -20,22 +21,26 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <span class="nav-logo">SV<span>.</span></span>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Trayectoria</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <!-- ====== HERO ====== -->
     <header class="hero" id="hero">
         <div class="hero-bg"></div>
-        <div class="container hero-content">
+        <div class="hero-content">
             <div class="hero-text">
-                <!-- Chips -->
                 <div class="hero-chips">
                     <span class="badge-available">
                         <span class="badge-dot"></span>
@@ -52,8 +57,8 @@
 
                 <p class="hero-greeting">Hola, soy</p>
                 <h1 class="hero-name">
-                    Sebastián Vásquez
-                    <span class="hero-last">Maldonado</span>
+                    Sebastián
+                    <span class="hero-last">Vásquez Maldonado</span>
                 </h1>
                 <p class="hero-title">Data &amp; BI · Automatización SII</p>
                 <p class="hero-tagline">
@@ -76,13 +81,13 @@
                     </div>
                 </div>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">Ver proyectos →</a>
+                    <a href="#projects" class="btn btn-primary">Ver proyectos <span style="display:inline-block;transition:transform .3s">→</span></a>
                     <a href="#contact" class="btn btn-outline">Contactar</a>
                     <a href="assets/CV_Sebastian_Vasquez.pdf" class="btn btn-outline" download>Descargar CV</a>
                 </div>
             </div>
             <div class="hero-photo">
-                <img src="assets/profile.png" alt="Sebastián Vásquez Maldonado" class="profile-img-main">
+                <img src="assets/profile.jpg" alt="Sebastián Vásquez Maldonado" class="profile-img-main">
             </div>
         </div>
     </header>
@@ -97,7 +102,7 @@
             <div class="about-grid">
                 <div class="about-photo-col reveal">
                     <div class="about-photo-frame">
-                        <img src="assets/profile.png" alt="Sebastián Vásquez Maldonado">
+                        <img src="assets/profile.jpg" alt="Sebastián Vásquez Maldonado">
                     </div>
                 </div>
                 <div class="about-text-col">
@@ -395,10 +400,6 @@
                                 <img src="assets/pf2-pagos.png" alt="Pagos y medios" loading="lazy">
                                 <span class="screenshot-label">Pagos</span>
                             </div>
-                            <div class="screenshot-card">
-                                <img src="assets/pf2-detalle.png" alt="Detalle de boletas" loading="lazy">
-                                <span class="screenshot-label">Detalle</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -494,6 +495,23 @@
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
         });
+
+        // Hamburger menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+            // Close on link click (mobile)
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('open');
+                });
+            });
+        }
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
