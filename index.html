@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sebastián Vásquez Maldonado — Ingeniero Civil Industrial, Data & BI Specialist. Automatización de procesos, análisis de datos y dashboards BI.">
-    <title>Sebastián Vásquez | Data & BI Specialist</title>
+    <title>Sebastián Vásquez | Data &amp; BI · Automatización</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='20' y='50' width='16' height='40' rx='4' fill='%230d9488'/><rect x='42' y='30' width='16' height='60' rx='4' fill='%230d9488'/><rect x='64' y='15' width='16' height='75' rx='4' fill='%230d9488'/></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='20' y='50' width='16' height='40' rx='4' fill='%23c9a86c'/><rect x='42' y='30' width='16' height='60' rx='4' fill='%23d4835a'/><rect x='64' y='15' width='16' height='75' rx='4' fill='%23c9a86c'/></svg>">
 </head>
 <body>
 
     <!-- ====== NAV ====== -->
     <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <span class="nav-logo">SV<span class="nav-dot">.</span></span>
+        <div class="nav-container">
+            <span class="nav-logo">SV<span>.</span></span>
             <ul class="nav-links">
                 <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Proyectos</a></li>
+                <li><a href="#experience">Trayectoria</a></li>
+                <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
@@ -29,10 +35,32 @@
         <div class="hero-bg"></div>
         <div class="container hero-content">
             <div class="hero-text">
+                <!-- Chips -->
+                <div class="hero-chips">
+                    <span class="badge-available">
+                        <span class="badge-dot"></span>
+                        Disponible · Proyectos de datos
+                    </span>
+                    <span class="location-chip">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Temuco · La Araucanía
+                    </span>
+                </div>
+
                 <p class="hero-greeting">Hola, soy</p>
-                <h1 class="hero-name">Sebastián Vásquez <span class="hero-last">Maldonado</span></h1>
+                <h1 class="hero-name">
+                    Sebastián Vásquez
+                    <span class="hero-last">Maldonado</span>
+                </h1>
                 <p class="hero-title">Data &amp; BI · Automatización SII</p>
-                <p class="hero-tagline">Automatización de procesos, análisis de datos y business intelligence &mdash; <span class="highlight">datos reales, resultados reales</span></p>
+                <p class="hero-tagline">
+                    Ingeniero Civil Industrial fundador de <strong>CS Asesorías</strong>.
+                    Automatizo procesos contables y tributarios, construyo dashboards BI y
+                    transformo datos en decisiones — <span class="highlight">datos reales, resultados reales</span>.
+                </p>
                 <div class="hero-metrics">
                     <div class="hero-metric">
                         <span class="metric-number">4+</span>
@@ -48,51 +76,89 @@
                     </div>
                 </div>
                 <div class="hero-cta">
-                    <a href="#project" class="btn btn-primary">Ver proyectos</a>
+                    <a href="#projects" class="btn btn-primary">Ver proyectos →</a>
                     <a href="#contact" class="btn btn-outline">Contactar</a>
                     <a href="assets/CV_Sebastian_Vasquez.pdf" class="btn btn-outline" download>Descargar CV</a>
                 </div>
             </div>
+            <div class="hero-photo">
+                <img src="assets/profile.png" alt="Sebastián Vásquez Maldonado" class="profile-img-main">
+            </div>
         </div>
     </header>
 
-    <!-- ====== ABOUT ====== -->
+    <!-- ====== ABOUT (con Fit Matrix) ====== -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
-            <div class="about-content">
-                <div class="about-photo">
-                    <img src="assets/profile.png" alt="Sebastián Vásquez Maldonado" class="profile-img">
-                </div>
-                <div class="about-text glass-card">
-                    <p>Ingeniero Civil Industrial de la <strong>Universidad de La Frontera</strong> y fundador de <strong>CS Asesorías</strong>. Me especializo en automatización de procesos contables y tributarios, gobierno de datos, calidad institucional y visualización con Power BI.</p>
-                    <p>Mi trabajo combina <strong>datos reales de clientes reales</strong> con Python, SQL y Excel/VBA para transformar información compleja en decisiones claras. Desde automatización de extracciones SII hasta dashboards institucionales, cada proyecto busca eficiencia operativa y trazabilidad.</p>
-                    <p>Actualmente lidero el diseño e implementación de dashboards Power BI y gobierno de datos en un proyecto ANID en la <strong>Universidad Católica de Temuco</strong>, además de desarrollar aplicaciones web para indicadores institucionales con metodología SMART.</p>
-                    <div class="about-cta">
-                        <a href="assets/CV_Sebastian_Vasquez.pdf" class="btn btn-primary" download>Descargar CV completo →</a>
+            <span class="section-eyebrow">——— Sobre mí</span>
+            <h2 class="section-title">Ingeniero de datos con enfoque en resultados</h2>
+            <span class="section-title-decor"></span>
+
+            <div class="about-grid">
+                <div class="about-photo-col reveal">
+                    <div class="about-photo-frame">
+                        <img src="assets/profile.png" alt="Sebastián Vásquez Maldonado">
                     </div>
-                    <div class="about-highlights">
+                </div>
+                <div class="about-text-col">
+                    <p class="about-paragraph reveal delay-1">
+                        Ingeniero Civil Industrial de la <strong>Universidad de La Frontera</strong> y fundador de <strong>CS Asesorías</strong>.
+                        Me especializo en automatización de procesos contables y tributarios, gobierno de datos,
+                        calidad institucional y visualización con Power BI.
+                    </p>
+                    <p class="about-paragraph reveal delay-2">
+                        Mi trabajo combina <strong>datos reales de clientes reales</strong> con Python, SQL y Excel/VBA
+                        para transformar información compleja en decisiones claras. Desde automatización de extracciones SII
+                        hasta dashboards institucionales, cada proyecto busca eficiencia operativa y trazabilidad.
+                    </p>
+
+                    <!-- Fit Matrix -->
+                    <div class="fit-matrix reveal delay-3">
+                        <div class="fit-item">
+                            <span class="fit-challenge">Datos desordenados sin trazabilidad</span>
+                            <span class="fit-arrow">→</span>
+                            <span class="fit-solution">ETL + dashboards Power BI con gobernanza</span>
+                        </div>
+                        <div class="fit-item">
+                            <span class="fit-challenge">Procesos SII manuales y lentos</span>
+                            <span class="fit-arrow">→</span>
+                            <span class="fit-solution">Automatización con Python + bots de extracción</span>
+                        </div>
+                        <div class="fit-item">
+                            <span class="fit-challenge">Sin métricas ni indicadores claros</span>
+                            <span class="fit-arrow">→</span>
+                            <span class="fit-solution">Indicadores SMART + aplicaciones web interactivas</span>
+                        </div>
+                        <div class="fit-item">
+                            <span class="fit-challenge">Equipos sin cultura de datos</span>
+                            <span class="fit-arrow">→</span>
+                            <span class="fit-solution">Capacitación BI + documentación de procesos</span>
+                        </div>
+                    </div>
+
+                    <!-- Highlights -->
+                    <div class="about-highlights reveal delay-4">
                         <div class="highlight-item">
                             <span class="highlight-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                             </span>
                             <span>Ing. Civil Industrial — UFRO</span>
                         </div>
                         <div class="highlight-item">
                             <span class="highlight-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                             </span>
                             <span>Fundador — CS Asesorías</span>
                         </div>
                         <div class="highlight-item">
                             <span class="highlight-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
                             </span>
                             <span>Power BI Avanzado — U. de Chile</span>
                         </div>
                         <div class="highlight-item">
                             <span class="highlight-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                             </span>
                             <span>Gobernanza de Datos — UCT</span>
                         </div>
@@ -102,41 +168,99 @@
         </div>
     </section>
 
-    <!-- ====== EXPERIENCE ====== -->
-    <section class="section section-alt" id="experience">
+    <!-- ====== SKILLS / HERRAMIENTAS ====== -->
+    <section class="section section-alt" id="skills">
         <div class="container">
-            <h2 class="section-title">Experiencia</h2>
+            <span class="section-eyebrow">——— Capacidades</span>
+            <h2 class="section-title">Herramientas y metodologías</h2>
+            <span class="section-title-decor"></span>
+            <p class="section-subtitle">Stack técnico que uso a diario para llevar datos del caos a la decisión</p>
+
+            <div class="skills-grid">
+                <div class="skill-card reveal delay-1">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>Python &amp; Datos</h3>
+                    <p>pandas, pdfplumber, Plotly, Jupyter, automatización de extracciones y procesos ETL.</p>
+                </div>
+                <div class="skill-card reveal delay-2">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    </div>
+                    <h3>BI &amp; Dashboards</h3>
+                    <p>Power BI (Avanzado — U. de Chile), Streamlit, visualización interactiva con Plotly.</p>
+                </div>
+                <div class="skill-card reveal delay-3">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <h3>Bases de Datos</h3>
+                    <p>SQL, Access, Excel avanzado, Power Query, Power Pivot, VBA Macros.</p>
+                </div>
+                <div class="skill-card reveal delay-1">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
+                    <h3>Datos Tributarios</h3>
+                    <p>SII, DDJJ (1820, 1829, 1847, 1926), HyperRenta, Boletas Electrónicas.</p>
+                </div>
+                <div class="skill-card reveal delay-2">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/></svg>
+                    </div>
+                    <h3>Automatización</h3>
+                    <p>ETL pipelines, regex, GUI (tkinter), ERP SIGSE, bots de extracción SII.</p>
+                </div>
+                <div class="skill-card reveal delay-3">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <h3>Gobernanza de Datos</h3>
+                    <p>Indicadores SMART, flujogramas, glosarios, SIAC, calidad institucional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== EXPERIENCE / TRAYECTORIA ====== -->
+    <section class="section" id="experience">
+        <div class="container">
+            <span class="section-eyebrow">——— Trayectoria</span>
+            <h2 class="section-title">Experiencia profesional</h2>
+            <span class="section-title-decor"></span>
+
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item reveal delay-1">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content">
                         <div class="timeline-period">May 2025 — Presente</div>
                         <h3>Profesional de Proyecto ANID INGE230010</h3>
                         <p class="timeline-org">Universidad Católica de Temuco</p>
                         <p>Lidero la estructuración de tablas de almacenamiento y bases de datos, automatizando completamente la limpieza y estructuración de datos. Diseño e implemento dashboards interactivos en Power BI para visualización de resultados y desarrollo aplicaciones web para la gestión de indicadores institucionales. En paralelo, facilito mesas de trabajo con actores clave usando metodología SMART y apoyo la formalización del gobierno de datos con flujogramas, procedimientos y glosarios.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item reveal delay-2">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content">
                         <div class="timeline-period">Oct 2024 — Abr 2025</div>
                         <h3>Gestor Técnico de Calidad y Análisis Institucional</h3>
                         <p class="timeline-org">CFT Estatal de La Araucanía</p>
                         <p>Automatización con Excel y Power BI. Implementación de ERP SIGSE. Capacitación a usuarios en BI. Documentación de procesos SIAC.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item reveal delay-3">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content">
                         <div class="timeline-period">Mar 2023 — Presente</div>
-                        <h3>Fundador & Analista de Datos</h3>
+                        <h3>Fundador &amp; Analista de Datos</h3>
                         <p class="timeline-org">CS Asesorías Ltda. · Consultoría contable y BI</p>
                         <p>Consultoría de automatización contable y BI para pymes. Desarrollo de herramientas para automatización de procesos tributarios, incluyendo un Bot para descarga automática desde el SII. Gestión de confección y envío de declaraciones juradas (1820, 1829, 1847, 1926) y organización de bases de datos de clientes.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item reveal delay-4">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content">
                         <div class="timeline-period">Dic 2021 — Feb 2023</div>
                         <h3>Analista de Datos Financieros</h3>
                         <p class="timeline-org">Holding de Inversiones INDER</p>
@@ -144,133 +268,92 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="certifications glass-card">
-                <h3>Certificaciones</h3>
-                <div class="certs-grid">
-                    <div class="cert-item">
-                        <span class="cert-badge">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </span>
-                        <div>
-                            <strong>Power BI Avanzado</strong>
-                            <span>Universidad de Chile · May 2025</span>
-                        </div>
+    <!-- ====== CERTIFICATIONS ====== -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <span class="section-eyebrow">——— Respaldo</span>
+            <h2 class="section-title">Certificaciones</h2>
+            <span class="section-title-decor"></span>
+            <p class="section-subtitle">Formalizando el conocimiento con programas acreditados</p>
+
+            <div class="certs-grid">
+                <div class="cert-item reveal delay-1">
+                    <span class="cert-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </span>
+                    <div>
+                        <strong>Power BI Avanzado</strong>
+                        <span>Universidad de Chile · May 2025</span>
                     </div>
-                    <div class="cert-item">
-                        <span class="cert-badge">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </span>
-                        <div>
-                            <strong>Power BI Intermedio</strong>
-                            <span>Universidad de Chile · Dic 2024</span>
-                        </div>
+                </div>
+                <div class="cert-item reveal delay-2">
+                    <span class="cert-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </span>
+                    <div>
+                        <strong>Power BI Intermedio</strong>
+                        <span>Universidad de Chile · Dic 2024</span>
                     </div>
-                    <div class="cert-item">
-                        <span class="cert-badge">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </span>
-                        <div>
-                            <strong>Gastos Necesarios para la Renta</strong>
-                            <span>Colegio de Contadores · Jul 2025</span>
-                        </div>
+                </div>
+                <div class="cert-item reveal delay-3">
+                    <span class="cert-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </span>
+                    <div>
+                        <strong>Gastos Necesarios para la Renta</strong>
+                        <span>Colegio de Contadores · Jul 2025</span>
                     </div>
-                    <div class="cert-item">
-                        <span class="cert-badge">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </span>
-                        <div>
-                            <strong>Renta Líquida Imponible · Régimen 14 A</strong>
-                            <span>Colegio de Contadores · Jul 2025</span>
-                        </div>
+                </div>
+                <div class="cert-item reveal delay-1">
+                    <span class="cert-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </span>
+                    <div>
+                        <strong>Renta Líquida Imponible · Régimen 14 A</strong>
+                        <span>Colegio de Contadores · Jul 2025</span>
                     </div>
-                    <div class="cert-item">
-                        <span class="cert-badge">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </span>
-                        <div>
-                            <strong>Excel VBA Avanzado</strong>
-                            <span>LinkedIn · Dic 2023</span>
-                        </div>
+                </div>
+                <div class="cert-item reveal delay-2">
+                    <span class="cert-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </span>
+                    <div>
+                        <strong>Excel VBA Avanzado</strong>
+                        <span>LinkedIn · Dic 2023</span>
                     </div>
-                    <div class="cert-item">
-                        <span class="cert-badge">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </span>
-                        <div>
-                            <strong>Régimen ProPyme General 14 D N°3</strong>
-                            <span>Colegio de Contadores · Jun 2025</span>
-                        </div>
+                </div>
+                <div class="cert-item reveal delay-3">
+                    <span class="cert-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </span>
+                    <div>
+                        <strong>Régimen ProPyme General 14 D N°3</strong>
+                        <span>Colegio de Contadores · Jun 2025</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ====== SKILLS ====== -->
-    <section class="section" id="skills">
+    <!-- ====== PROJECTS ====== -->
+    <section class="section" id="projects">
         <div class="container">
-            <h2 class="section-title">Skills técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-card glass-card">
-                    <div class="skill-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                    </div>
-                    <h3>Python & Datos</h3>
-                    <p>pandas, pdfplumber, Plotly, Jupyter, automatización de extracciones</p>
-                </div>
-                <div class="skill-card glass-card">
-                    <div class="skill-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                    </div>
-                    <h3>BI & Dashboards</h3>
-                    <p>Power BI (Avanzado — U. de Chile), Streamlit, visualización interactiva</p>
-                </div>
-                <div class="skill-card glass-card">
-                    <div class="skill-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-                    </div>
-                    <h3>Bases de Datos</h3>
-                    <p>SQL, Access, Excel avanzado, Power Query, Power Pivot, VBA Macros</p>
-                </div>
-                <div class="skill-card glass-card">
-                    <div class="skill-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    </div>
-                    <h3>Datos Tributarios</h3>
-                    <p>SII, DDJJ (1820, 1829, 1847, 1926), HyperRenta, Boletas Electrónicas</p>
-                </div>
-                <div class="skill-card glass-card">
-                    <div class="skill-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/></svg>
-                    </div>
-                    <h3>Automatización</h3>
-                    <p>ETL pipelines, regex, GUI (tkinter), ERP SIGSE, bots SII</p>
-                </div>
-                <div class="skill-card glass-card">
-                    <div class="skill-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-                    </div>
-                    <h3>Gobernanza de Datos</h3>
-                    <p>Indicadores SMART, flujogramas, glosarios, SIAC, calidad institucional</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ====== PROJECT ====== -->
-    <section class="section section-alt" id="project">
-        <div class="container">
+            <span class="section-eyebrow">——— Portafolio</span>
             <h2 class="section-title">Proyectos</h2>
+            <span class="section-title-decor"></span>
             <p class="section-subtitle">Aplicaciones y pipelines desarrollados en el ámbito académico y profesional</p>
 
             <div class="projects-grid">
-                <div class="project-card glass-card">
+                <!-- Hotel Pulp Fiction -->
+                <div class="project-card reveal">
                     <div class="project-info">
                         <h3>Hotel Pulp Fiction — Dashboard de Ventas e IVA</h3>
                         <p>Dashboard interactivo público que analiza <strong>10,000 boletas electrónicas sintéticas</strong> de un hotel, con 28 campos cada una. Datos 100% sintéticos generados con seed reproducible para demostración de portfolio.</p>
                         <p>Incluye generador sintético parametrizable (<code>--single-company</code>), base de datos SQLite con 3 tablas e índices optimizados, y dashboard Streamlit con 5 páginas estilo Power BI. Desplegado en <strong>Streamlit Cloud</strong> con CI desde GitHub.</p>
-                        <p>📊 <strong>Dashboard en vivo:</strong> <a href="https://hotelpulpfictionv2dashboard.streamlit.app" target="_blank" style="color:var(--color-accent);font-weight:600">hotelpulpfictionv2dashboard.streamlit.app</a></p>
+                        <p>📊 <strong>Dashboard en vivo:</strong> <a href="https://hotelpulpfictionv2dashboard.streamlit.app" target="_blank">hotelpulpfictionv2dashboard.streamlit.app</a></p>
                         <div class="project-stack">
                             <span class="stack-tag">Python</span>
                             <span class="stack-tag">pandas</span>
@@ -285,13 +368,13 @@
                         </div>
                     </div>
                     <div class="project-arch">
-                        <div class="arch-box arch-source">Generador Sintético<br><span>10,000 boletas · seed reproducible</span></div>
+                        <div class="arch-box">Generador Sintético<br><span>10,000 boletas · seed reproducible</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-extract">SQLite Optimizado<br><span>3 tablas · 7 índices</span></div>
+                        <div class="arch-box">SQLite Optimizado<br><span>3 tablas · 7 índices</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-vis">Dashboard Streamlit<br><span>5 páginas · Tema Cisco dark</span></div>
+                        <div class="arch-box">Dashboard Streamlit<br><span>5 páginas · Tema Cisco dark</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-process">Streamlit Cloud<br><span>GitHub CI · Público</span></div>
+                        <div class="arch-box">Streamlit Cloud<br><span>GitHub CI · Público</span></div>
                     </div>
                     <div class="project-screenshots">
                         <h4 class="screenshots-title">Dashboard — Hotel Pulp Fiction</h4>
@@ -320,11 +403,12 @@
                     </div>
                 </div>
 
-                <div class="project-card glass-card">
+                <!-- KimnGenero -->
+                <div class="project-card reveal">
                     <div class="project-info">
                         <h3>KimnGenero — Gestión de indicadores y categorías</h3>
                         <p>Aplicación web full-stack desarrollada para la <strong>Universidad Católica de Temuco</strong> en el marco del proyecto ANID INGE230010. Expone indicadores institucionales y categorías vía API REST, con una interfaz React moderna para visualización y administración de datos.</p>
-                        <p>Arquitectura <strong>client-server</strong> con frontend en React/Vite + TypeScript, backend Express con capa de servicios y repositorios, y tipos compartidos entre ambas capas. Incluye pipeline de datos locales, documentación técnica completa y despliegue Docker institucional.</p>
+                        <p>Arquitectura <strong>client-server</strong> con frontend en React/Vite + TypeScript, backend Express con capa de servicios y repositorios, y tipos compartidos entre ambas capas. Incluye pipeline de datos locales y documentación técnica completa.</p>
                         <div class="project-stack">
                             <span class="stack-tag">React</span>
                             <span class="stack-tag">Vite</span>
@@ -336,13 +420,13 @@
                         <a href="https://github.com/VasquezMaldonadoSebastian/KimnGenero" class="btn btn-primary" target="_blank">Ver repositorio →</a>
                     </div>
                     <div class="project-arch">
-                        <div class="arch-box arch-source">Frontend React/Vite<br><span>TypeScript + pnpm</span></div>
+                        <div class="arch-box">Frontend React/Vite<br><span>TypeScript + pnpm</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-extract">API Express<br><span>Servicios + Repositorios</span></div>
+                        <div class="arch-box">API Express<br><span>Servicios + Repositorios</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-process">Tipos compartidos<br><span>shared/types</span></div>
+                        <div class="arch-box">Tipos compartidos<br><span>shared/types</span></div>
                         <div class="arch-arrow">↓</div>
-                        <div class="arch-box arch-vis">Datos locales + Docker<br><span>indicadores.json · Deploy</span></div>
+                        <div class="arch-box">Datos locales + Docker<br><span>indicadores.json · Deploy</span></div>
                     </div>
                     <div class="project-screenshots">
                         <h4 class="screenshots-title">Capturas</h4>
@@ -363,25 +447,29 @@
     </section>
 
     <!-- ====== CONTACT ====== -->
-    <section class="section" id="contact">
+    <section class="section section-alt" id="contact">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <span class="section-eyebrow">——— Contacto</span>
+            <h2 class="section-title">Conversemos</h2>
+            <span class="section-title-decor"></span>
+            <p class="section-subtitle">Datos reales, resultados reales — trabajemos juntos</p>
+
             <div class="contact-grid">
-                <a href="https://github.com/VasquezMaldonadoSebastian" target="_blank" class="contact-card glass-card">
+                <a href="https://github.com/VasquezMaldonadoSebastian" target="_blank" class="contact-card reveal delay-1">
                     <span class="contact-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                     </span>
                     <span class="contact-label">GitHub</span>
                     <span class="contact-detail">@VasquezMaldonadoSebastian</span>
                 </a>
-                <a href="https://www.linkedin.com/in/sebastian-vasquez-maldonado/" target="_blank" class="contact-card glass-card">
+                <a href="https://www.linkedin.com/in/sebastian-vasquez-maldonado/" target="_blank" class="contact-card reveal delay-2">
                     <span class="contact-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                     </span>
                     <span class="contact-label">LinkedIn</span>
                     <span class="contact-detail">/in/sebastian-vasquez-maldonado/</span>
                 </a>
-                <a href="mailto:vasquezmaldonadosebastian@gmail.com" class="contact-card glass-card">
+                <a href="mailto:vasquezmaldonadosebastian@gmail.com" class="contact-card reveal delay-3">
                     <span class="contact-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                     </span>
@@ -395,12 +483,19 @@
     <!-- ====== FOOTER ====== -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Sebastián Vásquez Maldonado &mdash; Datos reales, resultados reales.</p>
+            <p>&copy; 2026 Sebastián Vásquez Maldonado — <span>Datos reales, resultados reales.</span></p>
         </div>
     </footer>
 
-    <!-- ====== SMOOTH SCROLL ====== -->
+    <!-- ====== SCRIPTS ====== -->
     <script>
+        // Navbar blur on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -409,11 +504,21 @@
             });
         });
 
-        // Navbar blur on scroll
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        // IntersectionObserver — scroll reveal animations
+        const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -60px 0px'
         });
+
+        revealEls.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
